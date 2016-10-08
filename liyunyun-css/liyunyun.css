@@ -1,0 +1,698 @@
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+
+}
+
+/*版心提取*/
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+/*去掉列表的默认样式*/
+ul, ol {
+    list-style: none;
+}
+
+/*各浏览器显示不同，去掉蓝色边框*/
+fieldset, img, input, button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun", "宋体";
+}
+
+/*清除浮动*/
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+
+/*设置字体样式*/
+
+body {
+    height: 100%;
+    font: 12px/150% Arial, Verdana, "\5FAE\8F6F\96C5\9ED1,\5b8b\4f53";
+    color: #131313;
+    background: #fff;
+}
+
+/*a标签的样式*/
+a {
+    color: #999;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FF5555;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+s, i, em, b {
+    font-style: normal;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: normal;
+}
+
+em {
+    font: 14px/18px Microsoft yahei;
+}
+
+span {
+    display: inline-block;
+}
+
+/*===========================================================*/
+
+/*头部LOGO开始*/
+.logo{
+    height: 55px;
+    padding-top: 12px;
+}
+
+/*gift部分*/
+.logo-gift{
+    color: #999;
+    padding-right: 20px;
+}
+
+.logo-gift span{
+    padding: 0 10px;
+}
+
+.logo-gift b{
+    padding: 0 1px;
+}
+
+/*weixin部分*/
+.logo-gift .weixin{
+    position: relative;
+}
+
+/*隐藏的微信二维码显示*/
+.logo-gift .weixin .weixin-box{
+    height: 80px;
+    width: 204px;
+    padding: 10px;
+    /*background: #fff;*/
+    position: absolute;
+    left: -20px;
+    top:32px;
+    background:#fff url(../images/ss001.png) no-repeat 0 0;
+    border: 1px solid #c5c5c5;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    display: none;
+    z-index: 1;
+}
+.logo-gift .weixin .weixin-box i{
+    display: block;
+    background: url(../images/icon_2015.png) -211px -2px;
+    height: 9px;
+    width: 18px;
+    position: absolute;
+    left:37px;
+    top: -9px;
+}
+
+/*language部分*/
+.language{
+    position: relative;
+    border: 1px solid #fff;
+    width: 59px;
+}
+.logo-gift .language i{
+    width: 9px;
+    height: 5px;
+    background: url("../images/icon_2015.png") -358px -13px no-repeat;
+    margin: 8px 0 0 3px
+}
+/*隐藏的内容显示*/
+.languageborder{
+    border: 1px solid #cacaca;
+    border-bottom: none;
+}
+.logo-gift .language ul{
+    display: none;
+    width: 78px;
+    position: absolute;
+    top:18px;
+    left:-1px;
+    background: #fff;
+}
+
+.logo-gift .language li{
+    width: 79px;
+    line-height: 28px;
+}
+
+.logo-gift .language li span{
+    display: block;
+    padding: 0 15px 0 5px;
+    margin: 0 5px;
+    border-top: 1px dashed #cacaca;
+}
+
+
+/*phone部分*/
+.logo-phone {
+    width: 150px;
+    height: 42px;
+    /*background: pink;*/
+    position: relative;
+    margin-right: 10px;
+    line-height: 20px;
+}
+.logo-phone i{
+    width: 42px;
+    height: 42px;
+    background: url("../images/com_icon_phone.gif") no-repeat;
+}
+.logo-phone span{
+    font-size: 14px;
+    color: #FF6C67;
+    padding: 0 10px;
+}
+/*隐藏的二维码显示*/
+.logo-phone .logo-phone-weixin{
+    height: 92px;
+    width: 217px;
+    background:#fff url("../images/icon_2015.png") no-repeat -373px -229px;
+    padding: 10px;
+    position: absolute;
+    top: 54px;
+    border: 1px solid #C5C5C5;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    display: none;
+}
+.logo-phone .logo-phone-weixin i{
+    width: 18px;
+    height: 9px;
+    background:url("../images/icon_2015.png") -211px -2px;
+    position: absolute;
+    left: 37px;
+    top: -9px;
+}
+
+
+/*tel部分*/
+.logo-tel{
+    width: 180px;
+    position: relative;
+}
+.logo-tel b{
+    float: left;
+    height: 42px;
+    width: 42px;
+    margin-right: 10px;
+    background: url("../images/icon_2015.png") -42px -2px no-repeat;
+}
+
+.logo-tel .sp1{
+    color:#9F9F9F;
+    font:14px/18px Microsoft yahei;
+}
+
+.logo-tel .sp2{
+    color: #2664C8;
+    font: 16px/18px Microsoft yahei;
+}
+
+.logo-tel .sp2 i{
+    width: 9px;
+    height: 8px;
+    background: url("../images/icon_2015.png") -378px -12px;
+    margin-left:7px ;
+}
+
+/*tel部分下拉单显示*/
+.logo-tel-list{
+    width: 160px;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    padding: 4px 10px;
+    position: absolute;
+    top:54px;
+    z-index: 1;
+    display: none;
+}
+.logo-tel-list i{
+    position: absolute;
+    height: 9px;
+    width: 18px;
+    background: url("../images/icon_2015.png") -211px -2px;
+    left: 37px;
+    top: -9px;
+}
+
+.logo-tel-list li{
+    border-bottom: 1px dashed #C5C5C5;
+    padding: 5px 0;
+    color: #999;
+}
+
+/*头部LOGO结束*/
+
+/*头部导航栏开始*/
+.nav{
+    height: 40px;
+    margin-top: 13px;
+    background: #2064C8;
+}
+
+/*nav左边开始*/
+.nav-left li{
+    float: left;
+    line-height: 40px;
+    border-right: 1px solid #3774ce;
+}
+
+.nav-left li a{
+    display: block;
+    height: 40px;
+    font: 14px/40px "Microsoft YaHei";
+    color: #fff;
+    padding: 0 12px;
+}
+
+/*nav右边开始*/
+.nav-right{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    padding: 0 23px;
+    background: #003679;
+    position: relative;
+}
+
+.nav-right b{
+    color: #fff;
+    font: 14px 'Microsoft YaHei', Tahoma, Geneva, sans-serif;
+}
+
+.nav-right .nav-right-login,.nav-right .nav-right-reg{
+    padding: 0 4px;
+    color: #fff;
+    font: 14px 'Microsoft YaHei', Tahoma, Geneva, sans-serif;
+}
+
+/*vav-right下的nav-login部分，即下拉部分开始*/
+.nav-login{
+    position: absolute;
+    width: 208px;
+    background: #fff;
+    top: 40px;
+    right: 0;
+    border: 1px solid #C5C5C5;
+    box-shadow:1px 1px 3px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    display: none;
+}
+
+.nav-login-btn{
+    margin: 15px;
+    margin-bottom: 0;
+}
+.nav-login-btn a{
+    display: block;
+    width: 180px;
+    height: 34px;
+    background: #F80;
+    color: #fff;
+    font: 18px/34px "Microsoft YaHei";
+    border-radius: 3px;
+
+}
+
+.nav-login-item{
+    width: 190px;
+    margin: 20px 10px 0;
+    overflow: hidden;
+}
+.nav-login-item li{
+    float: left;
+    width: 63px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+.nav-login-item li a{
+    position: relative;
+    width: 63px;
+    height: 60px;
+}
+
+.nav-login-item li a i{
+    display: block;
+    width: 60px;
+    height: 55px;
+    background: url("../images/el_com.png") no-repeat #fff;
+}
+
+/*设置每个i的背景图片*/
+
+.nav-login-item .item-1 i{
+    background-position: -146px -680px;
+}
+
+.nav-login-item .item-2 i{
+    background-position: -212px -570px;
+}
+
+.nav-login-item .item-3 i{
+    background-position: -212px -680px;
+}
+
+.nav-login-item .item-4 i{
+    background-position: -146px -630px;
+}
+
+.nav-login-item .item-5 i{
+    background-position: -212px -630px;
+}
+
+.nav-login-item .item-6 i{
+    background-position: -272px -625px;
+}
+
+.nav-login-item .item-7 i{
+    background-position: -146px -570px;
+}
+
+.nav-login-item .item-8 i{
+    background-position: -272px -570px;
+}
+
+.nav-login-item .item-9 i{
+    background-position: -272px -680px;
+}
+
+/*设置下标文字的位置*/
+.nav-login-item li span{
+    position: absolute;
+    width: 60px;
+    left:-32px;
+    top:-20px;
+    line-height: 18px;
+}
+
+/*头部导航栏结束*/
+
+/*banner部分开始*/
+.banner{
+    height: 380px;
+    width: 100%;
+    position: relative;
+}
+
+
+.banner-pic li{
+    position: absolute;
+    top:0;
+    left:0;
+    height: 380px;
+    width: 100%;
+}
+
+.banner-pic .pic-1 a{
+    display: block;
+    height: 380px;
+    background: url(../images/banner1_20160510.jpg) no-repeat center bottom;
+}
+
+.banner-pic .pic-2 a{
+    display: block;
+    height: 380px;
+    background: url(../images/banner1_20160511.jpg) no-repeat center bottom;
+}
+
+.banner-pic .pic-3 a{
+    display: block;
+    height: 380px;
+    background: url(../images/banner1_20160505.jpg) no-repeat center bottom;
+}
+
+.banner-index{
+    position: absolute;
+    right: 50px;
+    bottom: 8px;
+}
+
+.banner-index i{
+    display: inline-block;
+    width: 25px;
+    height: 5px;
+    background: black;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+/*banner部分结束*/
+
+/*tooltip部分开始*/
+.tooltip{
+    height: 70px;
+}
+
+.tooltip-box{
+    padding: 20px 0;
+}
+.tooltip .tooltip-box-left{
+    padding: 0 20px;
+    border: 1px solid #ccc;
+    font:14px/30px "Microsoft YaHei";
+    color: #555;
+    border-radius: 10px;
+}
+
+.tooltip-box .tooltip-box-left a{
+    color: #37e;
+}
+
+.tooltip-box .tooltip-box-left a:hover{
+    color: red;
+}
+/*tooltip部分结束*/
+
+
+
+/*手风琴特效开始*/
+.accordion{
+    height: 260px;
+}
+.accordion-box li{
+    float: left;
+    overflow: hidden;
+}
+
+.accordion-box li a{
+    display: block;
+    width: 170px;
+    height: 260px;
+    position: relative;
+    background: black;
+}
+
+.accordion-box li a i{
+    display: block;
+    width: 100%px;
+    height: 260px;
+    opacity: 0.7;
+}
+
+.accordion-box .pic-1 i{
+    background: url("../images/20150422_ifold1.jpg") no-repeat center 0;
+}
+
+.accordion-box .pic-2 i{
+    background: url("../images/20150120_ifold2.jpg") no-repeat center 0;
+}
+
+.accordion-box .pic-3 i{
+    background: url("../images/20150120_ifold3.jpg") no-repeat center 0;
+}
+
+.accordion-box .pic-4 i{
+    background: url("../images/20150120_ifold4.jpg") no-repeat center 0;
+}
+
+.accordion-box .pic-5 i{
+    background: url("../images/20150120_ifold5.jpg") no-repeat center 0;
+}
+
+.accordion-box .pic-6 i{
+    background: url("../images/20150120_ifold6.jpg") no-repeat center 0;
+}
+
+.accordion-box .pic-7 i{
+    background: url("../images/20150120_ifold7.jpg") no-repeat center 0;
+}
+
+.accordion-box li a div{
+    position: absolute;
+    height: 260px;
+    width: 100%;
+    top:0px;
+    left: 0px;
+}
+.accordion-box li a div span{
+    display: block;
+    font: 30px/30px Microsoft Yahei;
+    color: #fff;
+    width: 30px;
+    margin: 30px auto;
+}
+/*手风琴特效结束*/
+
+
+/*footer部分开始*/
+
+/*footer-about部分开始*/
+.footer-about{
+    margin-top: 20px;
+    border-top: 1px solid #EEEEEE;
+    padding-top: 20px;
+}
+
+.footer-about-cooper{
+    margin-left:245px;
+    width: 250px;
+}
+.footer-about-cooper h3,.footer-about-us h3,.footer-about-app h3 ,.footer-about-weixin h3{
+    border-left: 3px solid #5D96C7;
+    font: 18px "Microsoft YaHei";
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+.footer-about-cooper ul li a,.footer-about-us ul li a{
+    font: 12px/24px "Microsoft YaHei";
+    color: #333;
+    padding-left: 13px;
+}
+
+.footer-about-us,.footer-about-app,.footer-about-weixin{
+    width: 250px;
+}
+
+.footer-about-app div{
+    height: 100px;
+    width: 100px;
+    margin-left: 13px;
+    background: url("../images/icon_2015.png") no-repeat -502px 0;
+}
+
+.footer-about-weixin div{
+    height: 100px;
+    width: 100px;
+    margin-left: 13px;
+    background: url("../images/icon_2015.png") no-repeat -500px -100px;
+}
+
+/*footer-about部分结束*/
+
+/*footer-word部分开始*/
+.footer-word p{
+    margin: 20px 0;
+    text-align: center;
+}
+/*footer-word部分结束*/
+
+/*footer-certificate部分开始*/
+.footer-certificate{
+    height: 37px;
+}
+.footer-certificate-box{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    margin-left: -176px;
+}
+.footer-certificate a{
+    position: absolute;
+    top: 0;
+    height: 37px;
+    margin: 0 5px;
+}
+
+.footer-certificate .cert-1{
+    left: 0;
+    width: 60px;
+    background: url("../images/el_com.png") -331px -482px no-repeat;
+}
+
+.footer-certificate .cert-2{
+    left: 70px;
+    width: 92px;
+    background: url("../images/el_com.png") -472px -438px no-repeat;
+}
+
+.footer-certificate .cert-3{
+    left:172px;
+    width: 92px;
+    background: url("../images/el_com.png") -564px -438px no-repeat;
+}
+
+.footer-certificate .cert-4{
+    left: 272px;
+    width: 92px;
+    background: url("../images/el_com.png") -656px -438px no-repeat;
+}
+
+.footer-bottom {
+    height: 40px;
+    background: #7C8FA2;
+    margin-top: 20px;
+}
+
+.footer-bottom ul{
+    margin: 0 175px 0 175px;
+}
+
+.footer-bottom li{
+    height: 40px;
+    width: 166px;
+    float: left;
+}
+
+.footer-bottom li a{
+    display: block;
+    width: 166px;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+}
+
+
+/*footer-certificate部分结束*/
+/*footer部分结束*/
+
